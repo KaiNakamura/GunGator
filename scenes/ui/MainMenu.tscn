@@ -13,13 +13,13 @@ outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 20
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="TileSet" id=3]
+[sub_resource type="TileSet" id=4]
 0/name = "Brick.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -82,7 +82,7 @@ align = 1
 margin_top = 92.0
 margin_right = 384.0
 margin_bottom = 110.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "High Score: 0"
 align = 1
 
@@ -117,7 +117,7 @@ size_flags_stretch_ratio = 0.25
 
 [node name="Background" type="TileMap" parent="."]
 z_index = -1
-tile_set = SubResource( 3 )
+tile_set = SubResource( 4 )
 cell_size = Vector2( 32, 16 )
 cell_half_offset = 0
 format = 1

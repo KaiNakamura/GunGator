@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/weapons/Weapon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://sprites/weapons/Revolver.png" type="Texture" id=2]
+[ext_resource path="res://audio/weapons/revolver_shoot.wav" type="AudioStream" id=3]
+[ext_resource path="res://scenes/weapons/revolver/RevolverBullet.tscn" type="PackedScene" id=4]
+
+[node name="Revolver" instance=ExtResource( 1 )]
+Bullet = ExtResource( 4 )
+ShootAudio = ExtResource( 3 )
+speed = 400.0
+camera_shake = 0.12
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( 11, -6 )
+texture = ExtResource( 2 )
+
+[node name="Muzzle" parent="." index="1"]
+position = Vector2( 16, -6 )
+
+[node name="MuzzleFlash" parent="." index="2"]
+position = Vector2( 16, -6 )

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/weapons/Bullet.tscn" type="PackedScene" id=1]
+
+[node name="ShotgunBullet" instance=ExtResource( 1 )]
+drag = 0.05
+remove_when_stopped = true
+remove_when_stopped_speed_threshold = 100.0
